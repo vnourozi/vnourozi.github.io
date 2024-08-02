@@ -2,7 +2,7 @@ import os
 
 def update_links(directory):
     old_url = "vahidnorozi8.github.io/vahid.github.io"
-    new_url = "vahidnorozi8.github.io"
+    new_url = "vahid.github.io"
     
     for root, dirs, files in os.walk(directory):
         for file in files:
