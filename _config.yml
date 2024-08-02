@@ -1,18 +1,14 @@
 # Site settings
-title: Your Amazing Site
-description: A fantastic website built with Jekyll and GitHub Pages
-author: Your Name
-
-# Build settings
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# Social media
-twitter_username: yourtwitterhandle
-github_username:  yourgithubusername
-
-# Other settings
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
+   title: Vahid's Website
+   description: Welcome to my personal website
+   url: "https://vnourozi.github.io" # Update this line
+   
+   # Build settings
+   theme: minima
+   
+   # GitHub information
+   github_username: vnourozi # Update this line
+   
+   # Other settings
+   markdown: kramdown
+   permalink: /blog/:year/:month/:day/:title/
