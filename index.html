@@ -45,6 +45,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#summer-schools">Summer Schools</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#journal-referee">Journal Referee</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#quantum-computing-projects">Quantum Computing Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -506,6 +507,34 @@
                         AUT Journal of Mathematics and Computing
                     </li>
                 </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Quantum Computing Projects -->
+        <section class="resume-section" id="quantum-computing-projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Quantum Computing Projects</h2>
+                <p class="mb-3">As part of my research in quantum computing, I conducted an in-depth analysis of quantum circuit errors using the Error Per Layered Gate (EPLG) and Layer Fidelity (LF) metrics. These measurements are crucial for understanding the performance and reliability of quantum processors at scale.</p>
+                
+                <div class="mb-5">
+                    <h3 class="mb-3">Ground State Population Decay</h3>
+                    <img class="img-fluid mb-3" src="assets/img/ground_state_decay.png" alt="Ground State Population Decay Plot">
+                    <p>This plot shows the decay of ground state population for different two-qubit subsystems as the circuit depth increases. Each line represents a different subsystem, and the decay indicates how quickly errors accumulate in the quantum circuit. The exponential decay observed is characteristic of quantum error accumulation.</p>
+                </div>
+        
+                <div class="mb-5">
+                    <h3 class="mb-3">Layer Fidelity vs. Chain Length</h3>
+                    <img class="img-fluid mb-3" src="assets/img/layer_fidelity.png" alt="Layer Fidelity vs. Chain Length Plot">
+                    <p>This graph illustrates how the Layer Fidelity changes with increasing chain length in our quantum circuit. We observe a decrease in Layer Fidelity as the chain length increases, which is due to the accumulation of errors in larger quantum systems. This information is valuable for understanding the scalability of quantum algorithms and for choosing optimal circuit sizes for specific tasks.</p>
+                </div>
+        
+                <div class="mb-5">
+                    <h3 class="mb-3">Error Per Layered Gate (EPLG) vs. Chain Length</h3>
+                    <img class="img-fluid mb-3" src="assets/img/eplg.png" alt="EPLG vs. Chain Length Plot">
+                    <p>The final plot shows the Error Per Layered Gate (EPLG) as a function of chain length. As the chain length increases, we typically see an increase in EPLG, indicating that errors become more prominent in larger quantum circuits. This metric is particularly useful for comparing the performance of different quantum processors and for estimating the feasibility of running complex quantum algorithms on specific hardware.</p>
+                </div>
+        
+                <p>Through this analysis, I gained valuable insights into the error characteristics of quantum circuits on real hardware. This information is crucial for developing error mitigation strategies, optimizing quantum algorithms, and pushing the boundaries of what's possible with current quantum computing technology.</p>
             </div>
         </section>
         <hr class="m-0" />
