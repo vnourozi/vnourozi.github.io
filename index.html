@@ -546,6 +546,53 @@
                     <p>This project demonstrates the potential of quantum computers to handle complex classification tasks at a scale that is challenging for classical computers. By successfully implementing and analyzing a 50-qubit VQC, we've shown how quantum computing can be scaled up for practical applications, while also highlighting the importance of circuit optimization and error mitigation in real-world quantum computations.</p>
                 </div>
                 <div class="project-item mb-5">
+                    <h3 class="mb-0">Variational Quantum Classifier: From Ideal to Noisy Quantum Systems</h3>
+                    <div class="subheading mb-3">Implementing and Optimizing a VQC for Real Quantum Hardware</div>
+                    <p>In this advanced project, I designed, implemented, and optimized a Variational Quantum Classifier (VQC) to distinguish between entangled and non-entangled quantum states. The project spanned from ideal simulations to execution on real quantum hardware, demonstrating the challenges and solutions in quantum machine learning.</p>
+                
+                    <div class="mb-4">
+                        <h4 class="mb-2">Impact of Noise on VQC Performance</h4>
+                        <img class="img-fluid mb-3" src="assets/img/vqc_noise_impact.png" alt="VQC Performance Under Different Noise Levels">
+                        <p>This plot demonstrates the impact of different noise levels on our VQC's performance. We tested the classifier with various error rates for RZ and CX gates, ranging from 10^-1 to 10^-4. The graph shows:</p>
+                        <ul>
+                            <li>The x-axis represents different quantum states (birds in our dataset)</li>
+                            <li>The y-axis shows the cost (closer to the label is better)</li>
+                            <li>Different colored lines represent various noise levels</li>
+                            <li>The black line indicates the true labels (0 for non-entangled, 1 for entangled states)</li>
+                        </ul>
+                        <p>This visualization clearly illustrates how increasing noise levels degrade the classifier's performance, highlighting the importance of error mitigation in quantum algorithms.</p>
+                    </div>
+                
+                    <div class="mb-4">
+                        <h4 class="mb-2">VQC Performance on Real Quantum Hardware with Error Mitigation</h4>
+                        <img class="img-fluid mb-3" src="assets/img/vqc_real_hardware.png" alt="VQC Performance on Real Quantum Hardware">
+                        <p>This plot showcases the performance of our optimized VQC on actual quantum hardware (IBM Quantum device). It compares three scenarios:</p>
+                        <ul>
+                            <li>Orange line: No error mitigation</li>
+                            <li>Blue line: With Dynamical Decoupling (DD) and Twirled Readout Error eXtinction (TREX)</li>
+                            <li>Green line (if implemented): With DD, TREX, and Zero Noise Extrapolation (ZNE)</li>
+                            <li>Black line: True labels</li>
+                        </ul>
+                        <p>The graph demonstrates the significant improvement in classification accuracy when employing error mitigation techniques. This real-world test underscores the critical role of error suppression and mitigation in achieving reliable results on noisy quantum hardware.</p>
+                    </div>
+                
+                    <h4 class="mb-2">Key Achievements:</h4>
+                    <ul>
+                        <li>Designed a VQC to distinguish between entangled and non-entangled 5-qubit quantum states</li>
+                        <li>Implemented efficient amplitude embedding and optimized the ansatz to reduce circuit depth by a factor of 10</li>
+                        <li>Analyzed the impact of different noise levels on VQC performance using simulated noise models</li>
+                        <li>Successfully executed the VQC on real IBM Quantum hardware</li>
+                        <li>Implemented and compared various error mitigation techniques including Dynamical Decoupling, TREX, and Zero Noise Extrapolation</li>
+                        <li>Achieved significant performance improvements on noisy hardware through error mitigation, with performance increasing from ~86% to ~98% in some cases</li>
+                    </ul>
+                
+                    <p>This project demonstrates the full lifecycle of developing a quantum machine learning algorithm, from ideal simulations to real hardware implementation. It highlights the challenges posed by quantum noise and the effectiveness of error mitigation techniques in real-world quantum computing applications.</p>
+                </div>
+
+
+                
+                
+                <div class="project-item mb-5">
                     <h3 class="mb-3">Quantum Circuit Error Analysis</h3>
                     <p>This project involved an in-depth analysis of quantum circuit errors using the Error Per Layered Gate (EPLG) and Layer Fidelity (LF) metrics. These measurements are crucial for understanding the performance and reliability of quantum processors at scale.</p>
                     
