@@ -518,6 +518,34 @@
         
                 <!-- Quantum Circuit Error Analysis Subsection -->
                 <div class="project-item mb-5">
+                    <h3 class="mb-0">Scaling a Variational Quantum Classifier to 50 Qubits</h3>
+                    <div class="subheading mb-3">Advanced Quantum Circuit Optimization and Execution</div>
+                    <p>In this advanced project, I scaled up a Variational Quantum Classifier (VQC) to operate on 50 qubits, pushing the boundaries of what's currently achievable in quantum simulations. This project built upon the foundations of a previous lab, focusing on optimizing quantum circuits for large-scale implementations and testing them on both quantum simulators and real quantum hardware.</p>
+                
+                    <div class="mb-4">
+                        <h4 class="mb-2">Cost on Test Data Using Matrix Product State Simulation</h4>
+                        <img class="img-fluid mb-3" src="assets/img/mps_simulation_cost.png" alt="Cost on Test Data MPS Plot">
+                        <p>This plot shows the cost function results for our 50-qubit VQC using Matrix Product State (MPS) simulation. The red line with circle markers represents the cost for each test state, while the black line shows the true labels. The close alignment between these lines indicates the high accuracy of our classifier, even at this large scale. This simulation was crucial in verifying the correctness of our circuit design and parameter optimization before running on actual quantum hardware.</p>
+                    </div>
+                
+                    <div class="mb-4">
+                        <h4 class="mb-2">50-Qubit VQC Performance on Real Quantum Hardware</h4>
+                        <img class="img-fluid mb-3" src="assets/img/real_hardware_performance.png" alt="50-Qubit VQC Performance on Real Quantum Hardware">
+                        <p>This graph demonstrates the performance of our 50-qubit VQC on a real IBM Quantum device. It compares two scenarios: one without error mitigation (orange line) and one with Dynamical Decoupling and TREX error mitigation (blue line). The black line represents the true labels. The error bars indicate the uncertainty in our measurements. This plot showcases the impact of error mitigation techniques in improving the classifier's performance on noisy quantum hardware, a critical aspect when working with large-scale quantum circuits.</p>
+                    </div>
+                
+                    <h4 class="mb-2">Key Achievements:</h4>
+                    <ul>
+                        <li>Developed an efficient method to create GHZ states on 50 qubits, reducing the two-qubit gate depth to 13 or less.</li>
+                        <li>Adapted the RealAmplitudes ansatz to a new connectivity map, optimizing it for the heavy hexagonal lattice of IBM Quantum devices.</li>
+                        <li>Generalized optimal parameters for a 50-qubit VQC, demonstrating an understanding of large-scale quantum circuit optimization.</li>
+                        <li>Successfully implemented and tested the VQC using Matrix Product State simulation, achieving high accuracy.</li>
+                        <li>Executed the 50-qubit VQC on real quantum hardware, comparing performance with and without error mitigation techniques.</li>
+                    </ul>
+                
+                    <p>This project demonstrates the potential of quantum computers to handle complex classification tasks at a scale that is challenging for classical computers. By successfully implementing and analyzing a 50-qubit VQC, we've shown how quantum computing can be scaled up for practical applications, while also highlighting the importance of circuit optimization and error mitigation in real-world quantum computations.</p>
+                </div>
+                <div class="project-item mb-5">
                     <h3 class="mb-3">Quantum Circuit Error Analysis</h3>
                     <p>This project involved an in-depth analysis of quantum circuit errors using the Error Per Layered Gate (EPLG) and Layer Fidelity (LF) metrics. These measurements are crucial for understanding the performance and reliability of quantum processors at scale.</p>
                     
