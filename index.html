@@ -543,12 +543,31 @@
                 </div>
         
                 <!-- Additional projects can be added here as separate div elements -->
-                <!-- For example:
+                
                 <div class="project-item mb-5">
-                    <h3 class="mb-3">Quantum Error Correction Simulation</h3>
-                    <p>Details of the Quantum Error Correction Simulation project...</p>
+                    <h3 class="mb-0">Simulating Heisenberg Spin Chain Dynamics</h3>
+                    <div class="subheading mb-3">Quantum Circuit Simulation at Utility Scale</div>
+                    <p>In this project, I simulated the dynamics of a large Heisenberg spin chain using quantum circuits. The goal was to measure the average magnetization as a function of external field h for two different phases of the spin chain: the Anisotropic phase (Δ=-5) and the XXX phase (Δ=1).</p>
+                
+                    <div class="mb-4">
+                        <h4 class="mb-2">Average Magnetization vs. External Field</h4>
+                        <img class="img-fluid mb-3" src="assets/img/magnetization_vs_field.png" alt="Average Magnetization vs. External Field">
+                        <p>This graph illustrates how the average magnetization (⟨Z⟩) changes with increasing external field strength (h) for two different phases of the Heisenberg spin chain. The left subplot shows the Anisotropic phase (Δ=-5), while the right subplot shows the XXX phase (Δ=1). The different behaviors observed in these phases demonstrate the rich physics captured by our quantum simulation.</p>
+                    </div>
+                
+                    <h4 class="mb-2">Key Aspects of the Project:</h4>
+                    <ul>
+                        <li>Implemented a 50-site Heisenberg spin chain using quantum circuits.</li>
+                        <li>Utilized the Qiskit SDK to create and optimize quantum circuits for time evolution.</li>
+                        <li>Employed the Li-Trotter approximation for time evolution operator decomposition.</li>
+                        <li>Implemented circuit optimization techniques, including layering of entangling gates and dynamical decoupling.</li>
+                        <li>Used the EstimatorV2 primitive and Batch execution mode for efficient computation on IBM Quantum hardware.</li>
+                        <li>Analyzed the results to observe the differences between the Anisotropic and XXX phases of the Heisenberg model.</li>
+                    </ul>
+                
+                    <p>This project demonstrates the potential of quantum computers to simulate complex quantum systems at a scale that is challenging for classical computers. By successfully implementing and analyzing a 50-qubit Heisenberg spin chain, we've shown how quantum computing can provide insights into quantum many-body physics.</p>
                 </div>
-                -->
+                
         
             </div>
         </section>
