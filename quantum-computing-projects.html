@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Vahid Nourozi - quantum computing, quantum error correction, coding theory, and algebraic geometry." />
+        <meta name="author" content="Vahid Nourozi" />
+        <title>Quantum Computing Projects | Vahid Nourozi</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D10BX538PS"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D10BX538PS');
+        </script>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand" href="index.html">
+                <span>Vahid Nourozi</span>
+            </a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="updates.html">Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="summer-schools.html">Summer Schools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="journal-referee.html">Journal Referee</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quantum-computing-projects.html" aria-current="page">Quantum Computing Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+<section class="resume-section" id="quantum-computing-projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Quantum Computing Projects</h2>
+                <p class="mb-3">My research in quantum computing encompasses various projects aimed at advancing our understanding and capabilities in this field. Below are some of the key projects I've been involved in:</p>
+
+                <!-- Quantum Circuit Error Analysis Subsection -->
+                <div class="project-item mb-5">
+                    <h3 class="mb-0">Scaling a Variational Quantum Classifier to 50 Qubits</h3>
+                    <div class="subheading mb-3">Advanced Quantum Circuit Optimization and Execution</div>
+                    <p>In this advanced project, I scaled up a Variational Quantum Classifier (VQC) to operate on 50 qubits, pushing the boundaries of what's currently achievable in quantum simulations. This project built upon the foundations of a previous lab, focusing on optimizing quantum circuits for large-scale implementations and testing them on both quantum simulators and real quantum hardware.</p>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Cost on Test Data Using Matrix Product State Simulation</h4>
+                        <img class="img-fluid mb-3" src="assets/img/mps_simulation_cost.png" alt="Cost on Test Data MPS Plot">
+                        <p>This plot shows the cost function results for our 50-qubit VQC using Matrix Product State (MPS) simulation. The red line with circle markers represents the cost for each test state, while the black line shows the true labels. The close alignment between these lines indicates the high accuracy of our classifier, even at this large scale. This simulation was crucial in verifying the correctness of our circuit design and parameter optimization before running on actual quantum hardware.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">50-Qubit VQC Performance on Real Quantum Hardware</h4>
+                        <img class="img-fluid mb-3" src="assets/img/real_hardware_performance.png" alt="50-Qubit VQC Performance on Real Quantum Hardware">
+                        <p>This graph demonstrates the performance of our 50-qubit VQC on a real IBM Quantum device. It compares two scenarios: one without error mitigation (orange line) and one with Dynamical Decoupling and TREX error mitigation (blue line). The black line represents the true labels. The error bars indicate the uncertainty in our measurements. This plot showcases the impact of error mitigation techniques in improving the classifier's performance on noisy quantum hardware, a critical aspect when working with large-scale quantum circuits.</p>
+                    </div>
+
+                    <h4 class="mb-2">Key Achievements:</h4>
+                    <ul>
+                        <li>Developed an efficient method to create GHZ states on 50 qubits, reducing the two-qubit gate depth to 13 or less.</li>
+                        <li>Adapted the RealAmplitudes ansatz to a new connectivity map, optimizing it for the heavy hexagonal lattice of IBM Quantum devices.</li>
+                        <li>Generalized optimal parameters for a 50-qubit VQC, demonstrating an understanding of large-scale quantum circuit optimization.</li>
+                        <li>Successfully implemented and tested the VQC using Matrix Product State simulation, achieving high accuracy.</li>
+                        <li>Executed the 50-qubit VQC on real quantum hardware, comparing performance with and without error mitigation techniques.</li>
+                    </ul>
+
+                    <p>This project demonstrates the potential of quantum computers to handle complex classification tasks at a scale that is challenging for classical computers. By successfully implementing and analyzing a 50-qubit VQC, we've shown how quantum computing can be scaled up for practical applications, while also highlighting the importance of circuit optimization and error mitigation in real-world quantum computations.</p>
+                </div>
+                <div class="project-item mb-5">
+                    <h3 class="mb-0">Variational Quantum Classifier: From Ideal to Noisy Quantum Systems</h3>
+                    <div class="subheading mb-3">Implementing and Optimizing a VQC for Real Quantum Hardware</div>
+                    <p>In this advanced project, I designed, implemented, and optimized a Variational Quantum Classifier (VQC) to distinguish between entangled and non-entangled quantum states. The project spanned from ideal simulations to execution on real quantum hardware, demonstrating the challenges and solutions in quantum machine learning.</p>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Impact of Noise on VQC Performance</h4>
+                        <img class="img-fluid mb-3" src="assets/img/vqc_noise_impact.png" alt="VQC Performance Under Different Noise Levels">
+                        <p>This plot demonstrates the impact of different noise levels on our VQC's performance. We tested the classifier with various error rates for RZ and CX gates, ranging from 10^-1 to 10^-4. The graph shows:</p>
+                        <ul>
+                            <li>The x-axis represents different quantum states (birds in our dataset)</li>
+                            <li>The y-axis shows the cost (closer to the label is better)</li>
+                            <li>Different colored lines represent various noise levels</li>
+                            <li>The black line indicates the true labels (0 for non-entangled, 1 for entangled states)</li>
+                        </ul>
+                        <p>This visualization clearly illustrates how increasing noise levels degrade the classifier's performance, highlighting the importance of error mitigation in quantum algorithms.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">VQC Performance on Real Quantum Hardware with Error Mitigation</h4>
+                        <img class="img-fluid mb-3" src="assets/img/vqc_real_hardware.png" alt="VQC Performance on Real Quantum Hardware">
+                        <p>This plot showcases the performance of our optimized VQC on actual quantum hardware (IBM Quantum device). It compares three scenarios:</p>
+                        <ul>
+                            <li>Orange line: No error mitigation</li>
+                            <li>Blue line: With Dynamical Decoupling (DD) and Twirled Readout Error eXtinction (TREX)</li>
+                            <li>Green line (if implemented): With DD, TREX, and Zero Noise Extrapolation (ZNE)</li>
+                            <li>Black line: True labels</li>
+                        </ul>
+                        <p>The graph demonstrates the significant improvement in classification accuracy when employing error mitigation techniques. This real-world test underscores the critical role of error suppression and mitigation in achieving reliable results on noisy quantum hardware.</p>
+                    </div>
+
+                    <h4 class="mb-2">Key Achievements:</h4>
+                    <ul>
+                        <li>Designed a VQC to distinguish between entangled and non-entangled 5-qubit quantum states</li>
+                        <li>Implemented efficient amplitude embedding and optimized the ansatz to reduce circuit depth by a factor of 10</li>
+                        <li>Analyzed the impact of different noise levels on VQC performance using simulated noise models</li>
+                        <li>Successfully executed the VQC on real IBM Quantum hardware</li>
+                        <li>Implemented and compared various error mitigation techniques including Dynamical Decoupling, TREX, and Zero Noise Extrapolation</li>
+                        <li>Achieved significant performance improvements on noisy hardware through error mitigation, with performance increasing from ~86% to ~98% in some cases</li>
+                    </ul>
+
+                    <p>This project demonstrates the full lifecycle of developing a quantum machine learning algorithm, from ideal simulations to real hardware implementation. It highlights the challenges posed by quantum noise and the effectiveness of error mitigation techniques in real-world quantum computing applications.</p>
+                </div>
+
+                <div class="project-item mb-5">
+                    <h3 class="mb-0">Exploring Qiskit Serverless: VQE and Parallel Transpilation</h3>
+                    <div class="subheading mb-3">Leveraging Cloud Computing for Quantum Algorithms</div>
+                    <p>In this advanced project, I explored the capabilities of Qiskit Serverless to deploy and execute quantum algorithms in a cloud environment. The project focused on two main aspects: implementing a Variational Quantum Eigensolver (VQE) and performing parallel transpilation of quantum circuits.</p>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">VQE Cost History</h4>
+                        <img class="img-fluid mb-3" src="assets/img/vqe_cost_history.png" alt="VQE Cost History">
+                        <p>This plot shows the convergence of the Variational Quantum Eigensolver (VQE) algorithm executed using Qiskit Serverless. The x-axis represents the number of iterations, while the y-axis shows the cost (energy) at each iteration. Key observations:</p>
+                        <ul>
+                            <li>The decreasing trend in the cost indicates the algorithm's convergence towards the ground state energy of the system.</li>
+                            <li>The rapid initial decrease followed by a more gradual optimization demonstrates the effectiveness of the VQE approach in finding the minimum energy state.</li>
+                            <li>Executing this computationally intensive task on Qiskit Serverless allowed for efficient resource utilization without managing the underlying infrastructure.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Execution Time Comparison: Local vs. Serverless</h4>
+                        <img class="img-fluid mb-3" src="assets/img/execution_time_comparison.png" alt="Execution Time Comparison: Local vs. Serverless">
+                        <p>This bar chart compares the execution times of parallel transpilation tasks performed locally versus using Qiskit Serverless. The plot highlights:</p>
+                        <ul>
+                            <li>The significant time savings achieved by leveraging Qiskit Serverless for parallel transpilation tasks.</li>
+                            <li>The ability of serverless computing to efficiently distribute and parallelize complex quantum circuit optimization tasks.</li>
+                            <li>The scalability of quantum workflows when using cloud-based resources, enabling the handling of larger and more complex circuits.</li>
+                        </ul>
+                    </div>
+
+                    <h4 class="mb-2">Key Achievements:</h4>
+                    <ul>
+                        <li>Successfully deployed and executed a VQE algorithm using Qiskit Serverless, demonstrating the ability to run complex quantum algorithms in a cloud environment.</li>
+                        <li>Implemented a parallel transpilation workflow that optimized quantum circuits for specific backend architectures, exploring various optimization strategies simultaneously.</li>
+                        <li>Utilized distributed computing resources to significantly reduce the execution time of transpilation tasks compared to local execution.</li>
+                        <li>Gained practical experience in using Qiskit Serverless for both algorithm execution and circuit optimization, showcasing its versatility in quantum computing workflows.</li>
+                    </ul>
+
+                    <p>This project demonstrates the power of combining quantum computing with cloud-based serverless architecture. By leveraging Qiskit Serverless, we were able to efficiently execute complex quantum algorithms and perform resource-intensive circuit optimizations. The significant speedup in transpilation tasks and the ability to run VQE in a managed environment highlight the potential of serverless quantum computing in scaling up quantum applications and making them more accessible for practical use.</p>
+                </div>
+
+
+
+
+                <div class="project-item mb-5">
+                    <h3 class="mb-3">Quantum Circuit Error Analysis</h3>
+                    <p>This project involved an in-depth analysis of quantum circuit errors using the Error Per Layered Gate (EPLG) and Layer Fidelity (LF) metrics. These measurements are crucial for understanding the performance and reliability of quantum processors at scale.</p>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Ground State Population Decay</h4>
+                        <img class="img-fluid mb-3" src="assets/img/ground_state_decay.png" alt="Ground State Population Decay Plot">
+                        <p>This plot shows the decay of ground state population for different two-qubit subsystems as the circuit depth increases. Each line represents a different subsystem, and the decay indicates how quickly errors accumulate in the quantum circuit. The exponential decay observed is characteristic of quantum error accumulation.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Layer Fidelity vs. Chain Length</h4>
+                        <img class="img-fluid mb-3" src="assets/img/layer_fidelity.png" alt="Layer Fidelity vs. Chain Length Plot">
+                        <p>This graph illustrates how the Layer Fidelity changes with increasing chain length in our quantum circuit. We observe a decrease in Layer Fidelity as the chain length increases, which is due to the accumulation of errors in larger quantum systems. This information is valuable for understanding the scalability of quantum algorithms and for choosing optimal circuit sizes for specific tasks.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Error Per Layered Gate (EPLG) vs. Chain Length</h4>
+                        <img class="img-fluid mb-3" src="assets/img/eplg.png" alt="EPLG vs. Chain Length Plot">
+                        <p>The final plot shows the Error Per Layered Gate (EPLG) as a function of chain length. As the chain length increases, we typically see an increase in EPLG, indicating that errors become more prominent in larger quantum circuits. This metric is particularly useful for comparing the performance of different quantum processors and for estimating the feasibility of running complex quantum algorithms on specific hardware.</p>
+                    </div>
+
+                    <p>Through this analysis, I gained valuable insights into the error characteristics of quantum circuits on real hardware. This information is crucial for developing error mitigation strategies, optimizing quantum algorithms, and pushing the boundaries of what's possible with current quantum computing technology.</p>
+                </div>
+
+                <!-- Additional projects can be added here as separate div elements -->
+
+                <div class="project-item mb-5">
+                    <h3 class="mb-0">Simulating Heisenberg Spin Chain Dynamics</h3>
+                    <div class="subheading mb-3">Quantum Circuit Simulation at Utility Scale</div>
+                    <p>In this project, I simulated the dynamics of a large Heisenberg spin chain using quantum circuits. The goal was to measure the average magnetization as a function of external field h for two different phases of the spin chain: the Anisotropic phase (Δ=-5) and the XXX phase (Δ=1).</p>
+
+                    <div class="mb-4">
+                        <h4 class="mb-2">Average Magnetization vs. External Field</h4>
+                        <img class="img-fluid mb-3" src="assets/img/magnetization_vs_field.png" alt="Average Magnetization vs. External Field">
+                        <p>This graph illustrates how the average magnetization (⟨Z⟩) changes with increasing external field strength (h) for two different phases of the Heisenberg spin chain. The left subplot shows the Anisotropic phase (Δ=-5), while the right subplot shows the XXX phase (Δ=1). The different behaviors observed in these phases demonstrate the rich physics captured by our quantum simulation.</p>
+                    </div>
+
+                    <h4 class="mb-2">Key Aspects of the Project:</h4>
+                    <ul>
+                        <li>Implemented a 50-site Heisenberg spin chain using quantum circuits.</li>
+                        <li>Utilized the Qiskit SDK to create and optimize quantum circuits for time evolution.</li>
+                        <li>Employed the Li-Trotter approximation for time evolution operator decomposition.</li>
+                        <li>Implemented circuit optimization techniques, including layering of entangling gates and dynamical decoupling.</li>
+                        <li>Used the EstimatorV2 primitive and Batch execution mode for efficient computation on IBM Quantum hardware.</li>
+                        <li>Analyzed the results to observe the differences between the Anisotropic and XXX phases of the Heisenberg model.</li>
+                    </ul>
+
+                    <p>This project demonstrates the potential of quantum computers to simulate complex quantum systems at a scale that is challenging for classical computers. By successfully implementing and analyzing a 50-qubit Heisenberg spin chain, we've shown how quantum computing can provide insights into quantum many-body physics.</p>
+                </div>
+
+
+            </div>
+        </section>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <span class="footer-heading">Site visitor count</span>
+                <a class="visitor-badge-link" href="https://hits.sh/vnourozi.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img class="visitor-badge" src="https://hits.sh/vnourozi.github.io.svg?style=for-the-badge&amp;label=Visitors&amp;color=075d6b&amp;labelColor=151515" alt="Visitor count for vnourozi.github.io" referrerpolicy="no-referrer-when-downgrade" />
+                </a>
+            </div>
+        </footer>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- 100% privacy-first analytics -->
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    </body>
+</html>
