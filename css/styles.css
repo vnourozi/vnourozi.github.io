@@ -301,6 +301,19 @@ img {
   padding-left: 1.1rem;
 }
 
+.compact-updates {
+  padding-top: 1.8rem;
+}
+
+.updates-scroll {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  max-height: 17rem;
+  overflow-y: auto;
+  padding: 1rem 1rem 0.2rem;
+  scrollbar-color: var(--accent) #edf2f2;
+}
+
 .updates-list li {
   display: grid;
   gap: 0.25rem 1rem;
@@ -327,6 +340,48 @@ img {
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.section-note {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  margin-bottom: 1.35rem;
+}
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-list li {
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: 0.45rem 1rem;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  margin: 0;
+  padding: 0.85rem 0;
+}
+
+.publication-list li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.pub-year {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.pub-citation {
+  display: block;
+}
+
+.pub-venue {
+  color: var(--muted);
 }
 
 .d-flex {
@@ -469,6 +524,11 @@ img {
   padding: 0.8rem 0.9rem;
 }
 
+.footer-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+
 .footer-heading {
   color: var(--ink);
   font-family: var(--sans);
@@ -477,17 +537,24 @@ img {
   line-height: 1.2;
 }
 
-.visitor-badge-link {
-  align-items: center;
-  display: inline-flex;
-  min-height: 1.75rem;
+.footer-note {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
-.visitor-badge {
+.country-counter-link {
+  align-items: center;
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.country-counter-img {
   border: 0;
   display: block;
-  height: 28px;
-  width: auto;
+  height: auto;
+  max-width: min(100%, 293px);
 }
 
 @media (max-width: 760px) {
@@ -509,9 +576,11 @@ img {
 
   #sideNav {
     background: rgba(255, 255, 255, 0.96);
+    max-width: none;
     padding: 1rem 1rem 0.8rem;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 10;
   }
 
@@ -599,6 +668,10 @@ img {
   }
 
   .updates-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-list li {
     grid-template-columns: 1fr;
   }
 
