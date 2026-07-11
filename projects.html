@@ -10,7 +10,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Core theme CSS-->
-        <link href="css/styles.css?v=20260711-3" rel="stylesheet" />
+        <link href="css/styles.css?v=20260711-4" rel="stylesheet" />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D10BX538PS"></script>
         <script>
@@ -51,39 +51,42 @@
 <section class="resume-section" id="projects">
             <div class="resume-section-content">
                 <h2 class="mb-5">Projects</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                        <div class="mb-3">
-                            <h3 class="mb-0">Quantum Error Correction Simulation</h3>
-                            <div class="subheading mb-2">2023 - Present</div>
-                            <ul>
-                                <li>Implemented Shor's 9-qubit code and surface code for quantum error correction using Qiskit and custom C++ libraries</li>
-                                <li>Analyzed performance of minimum-weight perfect matching and belief propagation decoding algorithms</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                        <div class="mb-3">
-                            <h3 class="mb-0">Large-Scale Quantum Circuit Simulation</h3>
-                            <div class="subheading mb-2">2022 - Present</div>
-                            <ul>
-                                <li>Developed efficient simulation tools for quantum circuits with up to 50 qubits</li>
-                                <li>Utilized parallel computing techniques to optimize performance on CPU/GPU clusters</li>
-                                <li>Implemented in C++ and Python, achieving 100x speedup compared to naive implementation</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                        <div class="mb-3">
-                            <h3 class="mb-0">Quantum LDPC Codes for 5G and IoT</h3>
-                            <div class="subheading mb-2">2023</div>
-                            <p>Application of Quantum LDPC codes in 5G and IoT, funded by NSF Innovation Corps scholarship</p>
-                        </div>
-                    </li>
-                </ul>
+                <section class="project-section" aria-labelledby="current-projects">
+                    <h3 class="project-section-title" id="current-projects">Current Projects</h3>
+                    <article class="project-item">
+                        <h4>Quantum Error Correction Simulation</h4>
+                        <div class="subheading mb-2">2023 - Present</div>
+                        <ul>
+                            <li>Implementing Shor's 9-qubit code and surface-code simulations using Qiskit and custom C++ libraries.</li>
+                            <li>Evaluating minimum-weight perfect matching and belief-propagation decoders across multiple error models.</li>
+                        </ul>
+                    </article>
+                    <article class="project-item">
+                        <h4>Large-Scale Quantum Circuit Simulation</h4>
+                        <div class="subheading mb-2">2022 - Present</div>
+                        <ul>
+                            <li>Developing CPU/GPU simulation tools for quantum circuits with up to 50 qubits.</li>
+                            <li>Using C++/Python, CUDA, and OpenMP to accelerate large-scale simulation and benchmarking.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="project-section" aria-labelledby="completed-projects">
+                    <h3 class="project-section-title" id="completed-projects">Completed Projects</h3>
+                    <article class="project-item">
+                        <h4><a href="https://arxiv.org/abs/2603.10192" target="_blank" rel="noopener noreferrer">Learning to Decode Quantum LDPC Codes Via Belief Propagation</a></h4>
+                        <div class="subheading mb-2">2026</div>
+                        <p>Reinforcement learning selects sequential belief-propagation updates to improve QLDPC decoding performance and convergence.</p>
+                        <a href="https://arxiv.org/pdf/2603.10192" target="_blank" rel="noopener noreferrer" aria-label="Read Learning to Decode Quantum LDPC Codes Via Belief Propagation">
+                            <img class="img-fluid project-figure" src="assets/img/rl-guided-qldpc-decoding.png" alt="RL-guided sequential scheduling workflow for quantum LDPC belief-propagation decoding" />
+                        </a>
+                    </article>
+                    <article class="project-item">
+                        <h4>Quantum LDPC Codes for 5G and IoT</h4>
+                        <div class="subheading mb-2">2023</div>
+                        <p>Explored commercial applications of quantum LDPC codes through the NSF Innovation Corps program.</p>
+                    </article>
+                </section>
             </div>
         </section>
         </div>

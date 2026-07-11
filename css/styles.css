@@ -455,6 +455,23 @@ hr.m-0 {
   width: min(100%, 760px);
 }
 
+.project-section + .project-section {
+  margin-top: 2rem;
+}
+
+.project-section-title {
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.16rem;
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.25rem;
+}
+
+.project-item .project-figure {
+  background: #ffffff;
+  margin-top: 0.65rem;
+  width: 100%;
+}
+
 .site-footer {
   border-top: 1px solid var(--menu-rule);
   grid-column: 2;
