@@ -339,9 +339,7 @@ hr.m-0 {
 
 .publication-list li {
   border-top: 1px solid #e2e2e2;
-  display: grid;
-  gap: 0.3rem 0.8rem;
-  grid-template-columns: 3.5rem minmax(0, 1fr);
+  display: block;
   margin: 0;
   padding: 0.58rem 0;
 }
@@ -351,9 +349,29 @@ hr.m-0 {
 }
 
 .pub-year {
-  color: var(--muted);
-  font-size: 0.87rem;
-  font-weight: 700;
+  display: none;
+}
+
+.publication-list li.publication-year-heading {
+  border: 0;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.publication-list li.publication-year-heading:first-child {
+  margin-top: 0.25rem;
+}
+
+.publication-year-heading h3 {
+  border-bottom: 1px solid var(--rule);
+  color: var(--blue);
+  font-size: 1.12rem;
+  margin: 0;
+  padding: 0 0 0.24rem;
+}
+
+.publication-list li.publication-year-heading + li {
+  border-top: 0;
 }
 
 .pub-citation {
