@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vnourozi.github.io/sitemap.xml
